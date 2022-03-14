@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:0}
+  port: ${PORT:8090}
 
 instance.id: ${random.value}
 
@@ -15,7 +15,7 @@ ribbon:
 
 management:
   security:
-    enabled: true #desactiva mecaniscos de actuator de spring
+    enabled: true
 
 security:
   basic:
@@ -69,9 +69,10 @@ resilience4j.circuitbreaker:
       hbm2ddl:
         auto: update
     show-sql: true
+
 flyway:
   baseline-on-migrate: true
   baseline-version: 0
-# Map the error path to error template (for Thymeleaf)
+
 error:
   path=/error
