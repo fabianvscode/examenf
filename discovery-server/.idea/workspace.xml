@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d52627-b1f9-4310-becd-e5f0a5945ae4" name="Changes" comment="" />
+    <list default="true" id="14d52627-b1f9-4310-becd-e5f0a5945ae4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Modelo/RoleDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Modelo/RoleDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Modelo/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Modelo/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/Impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/Impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/Impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/repository/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/repository/RoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/classes/com/fabian/accesored/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accesored/target/test-classes/com/fabian/accesored/AccesoredApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../accesored/target/test-classes/com/fabian/accesored/AccesoredApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serviciodata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../serviciodata/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +33,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25WtHk9YiyQwevJqTqYyaWji2fn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminuser" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../serviciodata" />
   </component>
   <component name="RunManager">
     <configuration name="ApplicationEurekaServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
