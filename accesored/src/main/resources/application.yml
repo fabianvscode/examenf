@@ -1,0 +1,57 @@
+server:
+  port: ${PORT:8091}
+
+instance.id: ${random.value}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+ribbon:
+  eureka:
+    enabled: true
+
+management:
+  security:
+    enabled: false #desactiva mecaniscos de actuator de spring
+
+security:
+  basic:
+    enabled: false
+
+
+feign:
+  hystrix:
+    enabled: true
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: admin
+    password: admin
+    url: jdbc:postgresql://localhost:5432/user_red
+  application:
+    name: accesored-service  # Service registers under this name
+    freemarker:
+      enabled: false           # Ignore Eureka dashboard
+    thymeleaf:
+      cache: false             # Allow Thymeleaf templates to be reloaded at runtime
+      prefix: classpath:/templates/    # Trailing / mandatory
+      # Template location for this application only
+
+  jpa:
+    hibernate:
+      ddlAuto: validate
+      namingStrategy: org.hibernate.cfg.EJB3NamingStrategy
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      hbm2ddl:
+            auto: update
+    show-sql: true
+flyway:
+  baseline-on-migrate: true
+  baseline-version: 0
+  baselineOnMigrate: true
+
+error:
+  path=/error
