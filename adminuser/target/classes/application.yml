@@ -1,0 +1,74 @@
+server:
+  port: ${PORT:0}
+
+instance.id: ${random.value}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+
+ribbon:
+  eureka:
+    enabled: true
+
+management:
+  security:
+    enabled: true #desactiva mecaniscos de actuator de spring
+
+security:
+  basic:
+    enabled: true
+
+
+feign:
+  hystrix:
+    enabled: true
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: admin
+    password: admin
+    url: jdbc:postgresql://localhost:5432/admin_user
+  application:
+    name: adminuser-service  # Service registers under this name
+    freemarker:
+      enabled: false           # Ignore Eureka dashboard
+    thymeleaf:
+      cache: false             # Allow Thymeleaf templates to be reloaded at runtime
+      prefix: classpath:/templates/    # Trailing / mandatory
+      # Template location for this application only
+resilience4j.circuitbreaker:
+  instances:
+    listuserCB:
+      registerHealthIndicator: true
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 3
+      slidingWindowType: TIME_BASED
+      minimumNumberOfCalls: 4
+      waitDurationInOpenState: 5s
+      failureRateThreshold: 50
+      eventConsumerBufferSize: 10
+    altaUserCB:
+      registerHealthIndicator: true
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 3
+      slidingWindowType: TIME_BASED
+      minimumNumberOfCalls: 4
+      waitDurationInOpenState: 5s
+      failureRateThreshold: 50
+      eventConsumerBufferSize: 10
+
+  jpa:
+    hibernate:
+      ddlAuto: validate
+      namingStrategy: org.hibernate.cfg.EJB3NamingStrategy
+    show-sql: true
+flyway:
+  baseline-on-migrate: true
+  baseline-version: 0
+# Map the error path to error template (for Thymeleaf)
+error:
+  path=/error

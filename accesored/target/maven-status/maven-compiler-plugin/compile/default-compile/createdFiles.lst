@@ -1,0 +1,9 @@
+com/fabian/accesored/entity/User.class
+com/fabian/accesored/repository/RoleRepository.class
+com/fabian/accesored/entity/Role.class
+com/fabian/accesored/AccesoredApplication.class
+com/fabian/accesored/Service/UserService.class
+com/fabian/accesored/Service/Impl/UserServiceImpl.class
+com/fabian/accesored/controller/UserController.class
+com/fabian/accesored/Modelo/UserDto.class
+com/fabian/accesored/repository/UserRepository.class
